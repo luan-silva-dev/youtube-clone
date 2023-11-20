@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Robô';
+}
+
+html, body{
+    height: 100%;
+    background-color: #fff;
+}
+
+header{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.logo img{
+    height: 55px;
+    margin-left: 15px;
+    margin-top: -4px;
+}
+
+.search-nav{
+    height: 45px;
+    font-size: 20px;
+    padding: 8px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 1px solid grey;
+    margin-left: 20 px;
+}
+
+.btn-search{
+    display: inline;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: -4px;
+    border: 1px solid grey;
+    border-left: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+}
+
+.channel{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.channel img{
+    height: 40px;
+    margin-right: 2px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    width: 900px;
+    margin: 17px auto;
+}
+
+.categories button{
+    height: 35px;
+    width: 9vmax;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid grey; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
