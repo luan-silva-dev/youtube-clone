@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Robô';
 }
 
-html, body{
+body{
     height: 100%;
     background-color: #fff;
+    font-family: 'Robô';
 }
 
 header{
@@ -31,7 +31,11 @@ header{
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     border: 1px solid grey;
-    margin-left: 20 px;
+    margin-left: 20px;
+}
+
+.search-nav:focus{
+    outline: none;
 }
 
 .btn-search{
@@ -53,13 +57,13 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
+    margin: -2px 15px 0 0;
 }
 
 .channel img{
     height: 40px;
     margin-right: 2px;
-    border: 1px solid grey;
+    border: 2px solid grey;
     border-radius: 50%;
     padding: 5px;
 }
@@ -75,7 +79,7 @@ header{
 .categories button{
     height: 35px;
     width: 9vmax;
-    margin: 0 5px;
+    margin: 0 4px;
     font-size: 14px;
     font-weight: bold;
     border: 1px solid grey; 
@@ -83,6 +87,58 @@ header{
     cursor: pointer;
 }
 
+.box-videos{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 329px);
+    grid-auto-rows: minmax(auto, 300px);
+}
+
+.thumbnail img {
+    border-radius: 15px;
+}
+
+.thumbnail a::before{
+    content: attr(time-duration);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    right: 40px;
+    bottom: 56px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .9rem;
+}
+
+.video-details{
+    display: flex;
+    justify-content: row;
+}
+
+.channel {
+    margin: 5px 2px;
+}
+
+.info-video{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-video a, h3{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.info-video a span{
+    color: rgb(71, 71, 71);
+}
+
+.title-channel:hover{
+    color: rgba(196, 196, 196, 0.8);
+}
 
 
 
