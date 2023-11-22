@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
     height: 100%;
-    background-color: #fff;
-    font-family: 'Robô';
+    background-color: #ffffff;
     overflow-x: hidden;
+}
+
+header, section{
+    font-family: Poppins;
 }
 
 header{
@@ -96,17 +99,21 @@ header{
     grid-auto-rows: minmax(auto, 300px);
 }
 
+.thumbnail a {
+    text-decoration: none;
+}
+
 .thumbnail img {
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .thumbnail a::before{
     content: attr(time-duration);
     position: relative;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.61);
     color: white;
-    right: 40px;
-    bottom: 78px;
+    left: 248px;
+    top: 158px;
     padding: .1em .3em;
     border-radius: .3em;
     font-size: .9rem;
@@ -134,11 +141,11 @@ header{
 }
 
 .info-video a span{
-    color: rgb(71, 71, 71);
+    color: #3d3d3d;
 }
 
-.title-channel:hover{
-    color: rgba(196, 196, 196, 0.8);
+.info-video span:hover{
+    color: #a1a1a1;
 }
 
 
